@@ -1,0 +1,37 @@
+*{
+	padding:left;
+	margin:0px;
+}
+a{
+	text-decoration: none;
+}
+#HotMVbox{
+	width:100%;
+}
+#HotMVbox #MVshow{
+	width:1000px;
+	margin:0 auto;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+#HotMVbox #MVshow #title{
+	color:#888;
+	font-size:13px;
+}
+#HotMVbox #MVshow #play{
+	width:1000px;
+	position: relative;
+	
+	overflow: hidden;
+}
+#HotMVbox #MVshow #play #video{
+	width:1000px;
+	
+	
+}
+#HotMVbox #MVshow #play .danmudetail{
+	position: absolute;
+	left:100%;
+	width:500px;
+}
+

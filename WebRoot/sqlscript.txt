@@ -1,0 +1,70 @@
+//用户表
+create table user(
+	id varchar(50) primary key,
+	username varchar(30) unique,
+	password varchar(50)
+);
+//类型表
+create table type(
+	id int(50) primary key auto_increment,
+	typename varchar(50) unique
+);
+//音乐表
+create table music(
+	id varchar(50) primary key,
+	realname varchar(100),
+	musicpath varchar(50),
+	time varchar(30),
+	downloadnum int default 0,
+	singname varchar(30),
+	userid varchar(50),
+	username varchar(30),
+	typeid int,
+	mvid varchar(50),
+	foreign key (mvid) references mv(id),
+	foreign key (userid)  references user(id) on delete cascade on update cascade,
+	foreign key (typeid)  references type(id) on delete cascade on update cascade
+);
+//评论表
+create table say(
+	id varchar(50) primary key,
+	detail varchar(1024),
+	userid varchar(50),	//评论者id
+	username varchar(30),评论者username
+	musicid varchar(50),//音乐ID
+	foreign key (musicid)  references music(id) on delete cascade on update cascade
+);
+//弹幕表
+create table danmu(
+	time int,	//时间秒
+	musicid varchar(50),	//外键
+	detail  varchar(100),	//弹幕内ring
+	foreign key (musicid)  references music(id) on delete cascade on update cascade
+);
+//mv表
+create table mv(
+	id varchar(50) priamry key;
+	mvname varchar(100),	//mv名字，上传的视频名
+	mvpath varchar(200),	//mv路径 /a/b/xxx.mp4
+	playnum int	//播放量
+);
+//mv弹幕
+create table mvdanmu(
+	time int,	//时间
+	mvid varchar(50),	//mvid
+	detail varchar(100),	//弹幕内容
+	foreign key (mvid) references mv(id) on delete cascade on update cascade
+);
+insert into type(typename) values('影视');
+insert into type(typename) values('悲伤');
+insert into type(typename) values('愉快');
+insert into type(typename) values('轻松');
+insert into type(typename) values('欧美');
+insert into type(typename) values('DJ劲曲');
+insert into type(typename) values('日韩');
+insert into type(typename) values('古风');
+insert into type(typename) values('爱情');
+insert into type(typename) values('励志');
+insert into type(typename) values('华语');
+insert into type(typename) values('粤语');
+insert into type(typename) values('网络歌手');

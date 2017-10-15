@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.stx.mapper.IndexMapper">
+	<!-- 查询所有的音乐 -->
+	<select id="AllMusic" resultType="com.stx.pojo.Music">
+		select * from music
+	</select>
+	<!-- 查询每种类型的热门下载，根据type.id -->
+	<select id="HotMusic" parameterType="int" resultType="com.stx.pojo.Music">
+		select * from music where typeid=#{id} order by downloadnum desc limit 0,8
+	</select>
+	
+	<!-- 查看所有的分类的 -->
+	<select id="SelTypeId" resultType="com.stx.pojo.Type">
+		select * from type;
+	</select>
+	
+	<!-- 根据关键字搜索,根据歌手，歌名，类型 -->
+	<select id="SelByKey" parameterType="String" resultType="com.stx.pojo.Music">
+		(select * from music where filename like '%${value}%' or singname like '%${value}%')
+		union
+		(select * from music where typeid in(select id from type where typename like '${value}'))
+	</select>
+	
+	<!-- 查询热播MV，根据playnum -->
+	<!-- 查询出filename,singname,mvid -->
+	<select id="SelHotMv" resultType="com.stx.pojo.pack.HotMV">
+		select music.filename,music.singname,music.mvid  from music right outer join (select mv.id from mv order by playnum desc limit 0,6)  a on music.mvid=a.id
+	</select>
+</mapper>

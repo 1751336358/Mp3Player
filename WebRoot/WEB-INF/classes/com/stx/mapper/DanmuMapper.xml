@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.stx.mapper.DanmuMapper">
+	
+	<!-- 插入音乐弹幕 -->
+	<insert id="SendDanmu" parameterType="com.stx.pojo.Danmu">
+		insert into danmu(time,musicid,detail) values(#{time},#{musicid},#{detail})
+	</insert>
+	
+	<!-- 用Ajax，根据time和musicid查询music弹幕 -->
+	<select id="SelDanmu" parameterType="com.stx.pojo.Danmu" resultType="com.stx.pojo.DanmuMessage">
+		select detail message from danmu where musicid like #{musicid} and time=#{time}
+	</select>
+	
+	<!-- 插入mv弹幕 -->
+	<insert id="SendMVDanmu" parameterType="com.stx.pojo.MVDanmu">
+		insert into mvdanmu(time,mvid,detail) values(#{time},#{mvid},#{detail})
+	</insert>
+	
+	<!-- 用Ajax，根据time和mvid查询mv弹幕 -->
+	<select id="SelMVDanmu" parameterType="com.stx.pojo.MVDanmu" resultType="com.stx.pojo.DanmuMessage">
+		select detail message from mvdanmu where mvid like #{mvid} and time=#{time}
+	</select>
+</mapper>

@@ -1,0 +1,143 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+a{
+	text-decoration: none;
+}
+#register_top1{
+	width:100%;
+	height:40px;
+}
+#register_top1 #top1{
+	width:960px;
+	height:40px;
+	margin:0 auto;
+	background: url(../image/register_logo1.jpg)  no-repeat;
+}
+#register_top1 #top1 a{
+	float:right;
+	display:block;
+	line-height: 40px;
+	color:#0c85cc;
+	font: 12px/1.5 \5b8b\4f53, Arial, Verdana;
+	margin-top:13px;
+	margin-right:10px;
+}
+
+#register_top2{
+	width:100%;
+	height:60px;
+	background: #008ad4;
+}
+#register_top2 #top2{
+	width:960px;
+	height:60px;
+	margin:0 auto;
+
+	position: relative;
+	
+}
+#register_top2 #top2 #top2_logo{
+	position:absolute;
+	top:9px;
+	left:0px;
+	display:block;
+}
+
+#register_top2 #top2 .list{
+	position: absolute;
+	color:#fff;
+	font-size:16px;
+	line-height: 60px;
+}
+#register_top2 #top2 #a1{
+	left:189px;
+}
+#register_top2 #top2 #a2{
+	left:275px;
+}
+#register_top2 #top2 #a3{
+	left:380px;
+}
+#register_top2 #top2 #a4{
+	left:464px;
+}
+#register_top2 #top2 #a5{
+	left:719px;
+}
+#register_top2 #top2 #a6{
+	left:804px;;
+}
+#register_top2 #top2 #a7{
+	left:887px;;
+}
+#register_box{
+	margin-top:32px;
+	width:100%;
+	margin-bottom: 30px;
+}
+#register_box #register_show{
+	width:960px;
+	height:400px;
+	margin:0 auto;
+	border:1px solid #54ade7;
+	border-top:6px solid #54ade7;
+}
+#register_box #register_show #form{
+	width:440px;
+	height:375px;
+	margin:0 auto;
+	position: relative;
+}
+#register_box #register_show #form #register_title{
+	position: absolute;
+	top:30px;
+	left:50px;
+	font: 22px/22px Microsoft Yahei,"b8bf53",sans-serif;
+	color:#959595;
+}
+#register_box #register_show #form #Message{
+	color:#DB0909;
+	position: absolute;
+	left:50px;
+	top:70px;
+	font-size:12px;
+	display:none;
+}
+#register_box #register_show #form #register_uname{
+	position: absolute;
+	left:50px;
+	top:100px;
+	background: #F6F6F6;
+	border:1px solid #ccc;
+	width:366px;
+	height:36px;
+	text-indent: 10px;
+}
+#register_box #register_show #form #register_pwd{
+	position: absolute;
+	left:50px;
+	top:150px;
+	background: #F6F6F6;
+	border:1px solid #ccc;
+	width:366px;
+	height:36px;
+	text-indent: 10px;
+}
+#register_box #register_show #form #register_submit{
+	position: absolute;
+	position: absolute;
+	left:83px;
+	top:252px;
+	width:274px;
+	height:40px;
+	text-align: center;
+	line-height: 40px;
+	background:#50A9E3;
+	cursor: pointer;
+	color:white;
+	font-size:20px;
+	font-weight: 400;
+	border:none;
+}

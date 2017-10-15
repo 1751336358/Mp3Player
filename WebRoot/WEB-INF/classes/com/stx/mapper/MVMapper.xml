@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.stx.mapper.MVMapper">
+	
+	<!-- 根据musicid查询music和mv的一些信息 -->
+	<select id="SelMvByMusicId" parameterType="String" resultType="com.stx.pojo.pack.MusicMV">
+		select
+			music.id musicid,
+			music.filename musicfilename,
+			music.singname singname,
+			music.mvid mvid,
+			mv.mvpath mvpath,
+			mv.mvname mvname,
+			mv.playnum playnum
+		from music,mv 
+		where music.id=#{musicid} and music.mvid=mv.id
+	</select>
+	
+	<!--根据mvid将mv的playnum数量+1 -->
+	<update id="UpdatePlaynumByMvId" parameterType="String">
+		update mv set playnum=playnum+1 where id=#{id}
+	</update>
+	
+	<!-- 根据mvid查询出mv的信息 -->
+	<select id="SelMvById" parameterType="String" resultType="com.stx.pojo.MV">
+		select * from mv where id=#{id}
+	</select>
+	
+	<!-- 根据mvid查出music和mv的信息 -->
+	<select id="SelMusicMVByMvId" parameterType="String" resultType="com.stx.pojo.pack.MusicMV">
+		select music.filename musicfilename,
+		music.singname singname,
+		a.id mvid,
+		a.mvname mvname,
+		a.mvpath mvpath,
+		a.playnum playnum 
+   		from music right outer join (select * from mv where id=#{id}) a on music.mvid=a.id
+	</select>
+</mapper>
+
+<!--
+select music.id musicid,music.filename musicfilename,music.mvid mvid,mv.mvpath mvpath,mv.mvname mvname from music,mv where music.id='ad36c6ba-ee5f-47dc-a595-4b1359217a40' and music.mvid=mv.id;
+select music.id musicid,music.filename musicfilename,music.mvid mvid,mv.mvpath mvpath,mv.mvname mvname from music right outer join mv on music.id='ad36c6ba-ee5f-47dc-a595-4b1359217a40' and music.mvid=mv.id;
+-->

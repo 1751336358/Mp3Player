@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.stx.mapper.SayMapper">
+	
+	<!-- 将用户评论插入数据库 -->
+	<insert id="addSay" parameterType="com.stx.pojo.Say">
+		insert into say(id,userid,username,musicid,time,detail) values(#{id},#{userid},#{username},#{musicid},#{time},#{detail});
+	</insert>
+	<!-- 查看所有评论，根据musicid -->
+	<select id="SelAllSay" parameterType="String" resultType="com.stx.pojo.Say">
+		select * from say where musicid like #{musicid}
+	</select>
+	
+	<!-- 删除评论，根据say.id -->
+	<delete id="delSayById" parameterType="String">
+		delete from say where id like #{id}
+	</delete>
+</mapper>

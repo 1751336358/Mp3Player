@@ -1,0 +1,145 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+a{
+	text-decoration: none;
+}
+#DownBoxTop{
+	width:100%;
+	background: #F8F8F8;
+	height:355px;
+	margin-top:30px;
+	border:1px solid white;
+}
+#DownBoxTop #DownTop{
+	width:1000px;
+	height:255px;
+	
+	margin:0 auto;
+	margin-top:50px;
+}
+#DownBoxTop #DownTop .show1{
+	background: white;
+	width:315px;
+	height:255px;
+	float:left;	
+	margin-right:15px;
+	position: relative;
+	
+}
+#DownBoxTop #DownTop .show1:hover{
+	/*水平偏移 垂直偏移 模糊程度 阴影外延 阴影颜色*/
+	box-shadow: 0 0 8px rgba(0,0,0,0.25);
+}
+#DownBoxTop #DownTop .show1 .version{
+	position: absolute;
+	top:15px;
+	right:16px;
+	color:#c3c3c3;
+	font-size:14px;
+}
+#DownBoxTop #DownTop .show1 .img{
+	width:64px;
+	height:64px;
+	margin:0 auto;
+	margin-top:30px;
+}
+#DownBoxTop #DownTop .show1 .softname1{
+	width:100%;
+	text-align: center;
+	font: 18px/1.5 \5FAE\8F6F\96C5\9ED1,simsun,sans-serif;
+	color:#333;
+	margin-top:15px;
+}
+#DownBoxTop #DownTop .show1 .updateTime{
+	width:100%;
+	text-align: center;
+	color:#a2a2a2;
+	font-size:13px;
+	margin-top:10px;
+}
+#DownBoxTop #DownTop .show1 .downloadsoft{
+	display:block;
+	position:absolute;
+	width:180px;
+	
+	left:67px;
+	top:185px;
+	text-align: center;
+	line-height:36px;
+	background:#28A9F3;
+	font: 13px/1.5 \5FAE\8F6F\96C5\9ED1,simsun,sans-serif;
+	color:white;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+#DownBoxTop #DownTop .show1 .downloadsoft:hover{
+	background:#0090E2;
+}
+#DownBoxBottom{
+	width:100%;
+	background: #EEEFF0;
+	border:1px solid white;
+}
+#DownBoxBottom #DownBottom{
+	width:1000px;
+	margin:0 auto;
+	height:720px;
+
+	margin-top:50px;
+	margin-bottom: 50px;
+}
+#DownBoxBottom #DownBottom .show2{
+	position: relative;
+	width:315px;
+	height:125px;
+	margin-right:18px;
+	margin-bottom:20px;
+	background:white;
+	float:left;	
+}
+#DownBoxBottom #DownBottom .show2:hover{
+	/*水平偏移 垂直偏移 模糊程度 阴影外延 阴影颜色*/
+	box-shadow: 0 0 8px rgba(0,0,0,0.25);
+}
+#DownBoxBottom #DownBottom .show2 img{
+	position: absolute;
+	left:30px;
+	top:37px;
+}
+#DownBoxBottom #DownBottom .show2 .softname2{
+	position: absolute;
+	left:110px;
+	top:22px;
+	color:#333;
+	font-size: 16px;
+}
+#DownBoxBottom #DownBottom .show2 .time{
+	position: absolute;
+	left:110px;
+	top:49px;
+	color:#a2a2a2;
+	font-size:14px;
+}
+#DownBoxBottom #DownBottom .show2 a{
+	position: absolute;
+	left:110px;
+	top:79px;
+	display:block;
+	background: #28A9F3;
+	text-align: center;
+	width:80px;
+	height:26px;
+	line-height: 26px;
+	background: #28A9F3;
+	color:#fff;
+	font-size:13px;
+}
+#DownBoxBottom #DownBottom .show2 .version{
+	color:#c3c3c3;
+	font-size:14px;
+	position: absolute;
+	left:200px;
+	top:86px;
+}

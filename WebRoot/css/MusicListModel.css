@@ -1,0 +1,130 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+#Music_List{
+	width:100%;
+	
+}
+#Music_List #Music_Box{
+	width:1000px;
+	margin:0 auto;
+	
+}
+#Music_List #Music_Box  #Music_Left{
+	float:left;
+	width:218px;
+	border:1px solid #EEEEEE;	
+	margin-top:20px;
+}
+#Music_List #Music_Box  #Music_Left #Left_Title{
+	width:100%;
+	height:50px;
+	line-height: 50px;
+	padding-left:15px;
+	font-size:16px;
+	color:#555;
+	font-weight: normal;
+}
+#Music_List #Music_Box  #Music_Left ul{
+	width:100%;
+	height:500px;
+}
+#Music_List #Music_Box  #Music_Left ul li{
+	width:100%;
+	height:36px;
+	
+}
+#Music_List #Music_Box  #Music_Left ul li:hover{
+	background: #F5F8FB;
+}
+#Music_List #Music_Box  #Music_Left ul li .img{
+	width:16px;
+	height:16px;
+	display:block;
+	float:left;
+	margin-top:10px;
+	margin-left:15px;
+}
+#Music_List #Music_Box  #Music_Left ul li .link{
+	display:block;
+	float:left;
+	line-height: 36px;
+	font-size:14px;
+	color:#555;
+	margin-left:5px;
+	font-family:  \5FAE\8F6F\96C5\9ED1,simsun,sans-serif;
+}
+#Music_List #Music_Box  #Music_Left ul li .link:hover{
+	color:#009af3;
+}
+#Music_List #Music_Box  #Music_Right{
+	float:left;
+	width:750px;
+	
+	margin-left:30px;
+}
+#Music_List #Music_Box  #Music_Right #title{
+	width:100%;
+	height:70px;
+	line-height: 70px;
+	border-bottom:1px solid #CACACA;
+	border-bottom-style:dashed;
+	color:#333;
+	font-size:24px;
+}
+#Music_List #Music_Box  #Music_Right #list{
+	width:100%;
+}
+#Music_List #Music_Box  #Music_Right #list .outer{
+	width:100%;
+	height:55px;
+	border-bottom:1px solid #F2F2F2;
+}
+#Music_List #Music_Box  #Music_Right #list .outer:hover{
+	cursor: pointer;
+	background: #F5F8FB;
+}
+#Music_List #Music_Box  #Music_Right #list .outer p{
+	float:left;
+	line-height:53px;
+	padding-left:10px;
+	padding-right:10px;
+}
+#Music_List #Music_Box  #Music_Right #list .outer .box{
+	width:450px;
+	height:100%;
+	line-height:55px;
+	float:left;
+	font-family: Î¢ÈíÑÅºÚ,simsun,sans-serif;
+	font-size: 13px;
+	color: #333;
+}
+#Music_List #Music_Box  #Music_Right #list .outer .box:hover{
+	color:#009af3;
+	cursor: pointer;
+}
+#Music_List #Music_Box  #Music_Right #list .outer .operater{
+	width:230px;
+	height:100%;	
+	float:left;
+	line-height:55px;
+}
+#Music_List #Music_Box  #Music_Right #list .outer .operater a{
+	line-height:55px;
+	font-family:  \5FAE\8F6F\96C5\9ED1,simsun,sans-serif;
+	font-size:13px;
+	color:#ccc;
+	margin-right:10px;	
+	padding-left:10px;
+}
+#Music_List #Music_Box  #Music_Right #list .outer .operater a:hover{
+	color:#009af3;
+	cursor: pointer;
+}

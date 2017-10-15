@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.stx.mapper.UserMapper">
+	
+	<!-- 将新注册的用户添加到数据库中 -->
+	<insert id="addUserToDb" parameterType="com.stx.pojo.User">
+		insert into user(id,username,password) values(#{id},#{username},#{password})
+	</insert>
+	
+	<!-- 注册时判断用户名是否注册 -->
+	<select id="testUserIsRegister" resultType="int" parameterType="com.stx.pojo.User">
+		select count(*) from user where username like #{username}
+	</select>
+	
+	<!-- 根据username查到user对象 -->
+	<select id="selUserByUserName" resultType="com.stx.pojo.User" parameterType="String">
+		select * from user where username like #{username}
+	</select>
+	<!-- 登录时验证登录的用户名和密码是否正确 -->
+	<select id="testUserLogin" parameterType="com.stx.pojo.User" resultType="int">
+		select count(*) from user where username like #{username} and password like #{password}
+	</select>
+</mapper>

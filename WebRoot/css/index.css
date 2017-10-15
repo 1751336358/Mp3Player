@@ -1,0 +1,280 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+a{
+	text-decoration: none;
+}
+/*热门下载开始*/
+#index_box1{
+	width:100%;
+	height:394px;
+}
+#index_box1 #index_show1{
+	margin:0 auto;
+	width:1000px;
+	height:100%;
+	
+}
+
+#index_box1 #index_show1 #left1{
+	position:relative;
+	float:left;
+	width:650px;
+	height:394px;	/*结束后，去边框，宽度+2*/
+
+}
+
+#index_box1 #index_show1 #left1 #top1{
+	position:relative;
+	float:left;
+	width:100%;
+	height:77px;
+	border-bottom: 1px solid #F0F0F0;
+}
+
+#index_box1 #index_show1 #left1 #top1 h3{
+	float:left;
+	line-height: 77px;
+	font-weight: 200;
+	font-family:  \5FAE\8F6F\96C5\9ED1,simsun,sans-serif;
+	font-size: 1.5em;
+	margin-right:10px;
+}
+#index_box1 #index_show1 #left1 #top1 h3 span{
+	color:#009af3;
+	font-weight: 200;
+	
+}
+#index_box1 #index_show1 #left1 #top1 .type{
+	float:left;
+	line-height: 77px;
+	font-family:  \5FAE\8F6F\96C5\9ED1,simsun,sans-serif;
+	font-size:13px;
+	margin-left:20px;
+}
+#index_box1 #index_show1 #left1 #top1 .type:hover{
+	color:#009af3;
+	cursor: pointer;
+}
+#index_box1 #index_show1 #left1 #bottom1{
+	position:relative;
+	float:left;
+	width:100%;
+	height:317px;
+}
+#index_box1 #index_show1 #left1 #bottom1 .index_outer{
+	width:100%;
+	height:39px;
+	float:left;
+	
+}
+#index_box1 #index_show1 #left1 #bottom1 .index_outer:hover{
+	background: #F5F8FB;
+}
+#index_box1 #index_show1 #left1 #bottom1 .index_outer .box{
+	float:left;
+	width: 450px;
+	height: 100%;
+	line-height: 39px;
+	font-family:  \5FAE\8F6F\96C5\9ED1,simsun,sans-serif;
+	font-size:13px;
+	color:#333;
+	
+}
+#index_box1 #index_show1 #left1 #bottom1 .index_outer .box:hover{
+	color:#009af3;
+	cursor: pointer;
+}
+#index_box1 #index_show1 #left1 #bottom1 .index_outer .index_operator{
+	float:left;
+	width:160px;
+	height:100%;
+	line-height: 39px;
+	margin-left:30px;
+}
+#index_box1 #index_show1 #left1 #bottom1 .index_outer .index_operator a{
+	font-family:  \5FAE\8F6F\96C5\9ED1,simsun,sans-serif;
+	font-size:13px;
+	color:#ccc;
+	margin-right:10px;
+}
+#index_box1 #index_show1 #left1 #bottom1 .index_outer .index_operator a:hover{
+	color:#009af3;
+	cursor: pointer;
+}
+#index_box1 #index_show1 #right1 h3{
+	float:left;
+	line-height: 77px;
+	font-weight: 200;
+	font-family:  \5FAE\8F6F\96C5\9ED1,simsun,sans-serif;
+	font-size: 1.5em;
+	margin-right:10px;
+}
+#index_box1 #index_show1 #right1{
+	position:relative;
+	float:left;
+	width:349px;/*结束后，去边框，宽度+2*/
+	height:100%;
+	border-left:1px solid #ccc;
+
+}
+#index_box1 #index_show1 #right1 h3 span{
+	color:#009af3;
+	font-weight: 200;
+}
+#index_box1 #index_show1 #right1 .listmv{
+	float:left;
+	width:100%;
+	height:52px;
+	border-top:1px solid #F0F0F0;
+}
+#index_box1 #index_show1 #right1 .listmv a{
+	line-height: 52px;
+	color:#999;
+	font-size:13px;
+	padding-left:20px;
+}
+#index_box1 #index_show1 #right1 .listmv a:hover{
+	color:#009af3;
+}
+#index_box1 #index_show1 #right1 .listmv span{
+	line-height: 52px;
+	font-size:13px;
+	float:right;
+	padding-right:20px;
+}
+/*热门下载结束*/
+/*中部广告区*/
+#guanggao{
+	margin-top:30px;
+	width:100%;
+	height：100px;
+	overflow: hidden;
+}
+#guanggao #gbox{
+	width:1000px;
+	height:100px;
+	overflow: hidden;
+	margin:0 auto;
+}
+#guanggao #gbox #ul li{
+	width: 100%;
+	height: 100px;
+	list-style: none;
+	overflow: hidden;
+}
+/*中部广告区结束*/
+/*热门分类*/
+#hotType{
+	width:100%;
+	height:380px;
+	margin-top:30px;
+}
+#hotType #typeShow{
+	margin:0 auto;
+	width:1000px;
+	height:380px;
+	
+}
+#hotType #typeShow h3{
+	float:left;
+	line-height: 77px;
+	font-weight: 200;
+	font-family:  \5FAE\8F6F\96C5\9ED1,simsun,sans-serif;
+	font-size: 1.5em;
+	margin-right:10px;
+	width:100%;
+
+}
+#hotType #typeShow h3 span{
+	color:#009af3;
+	font-weight: 200;
+}
+#hotType #typeShow .typeInfo{
+	float:left;
+	width:142px;
+	height:150px;
+	overflow:hidden;
+
+	
+}
+#hotType #typeShow .typeInfo .typeimg{
+	float:left;
+	width:100px;
+	border-radius:71px;
+	overflow:hidden;
+
+	margin-left:21px;
+}
+#hotType #typeShow .typeInfo .typeimg img{
+	width:100px;
+	height:100px;
+}
+#hotType #typeShow .typeInfo .typeimg img:hover{
+	width:120%;
+}
+#hotType #typeShow .typeInfo  .typeLink{
+	width:100%;
+	display:block;
+	
+	float:left;
+	text-align: center;
+	height:40px;
+	line-height: 40px;
+	font-size:14px;
+	color:#333;
+}
+#hotType #typeShow .typeInfo  .typeLink:hover{
+	color:#009af3;
+}
+/*热门分类结束*/
+/*热门歌手*/
+#hotSinger{
+	margin-top:30px;
+	width:100%;
+	height:150px;
+	margin-bottom:30px;
+}
+#hotSinger #singShow{
+	width:1000px;
+	margin:0 auto;
+	height:100%;
+	
+	padding-left:20px;
+}
+
+#hotSinger #singShow h3{
+	float:left;
+	line-height: 77px;
+	font-weight: 200;
+	font-family:  \5FAE\8F6F\96C5\9ED1,simsun,sans-serif;
+	font-size: 1.5em;
+	margin-right:10px;
+	width:100%;
+
+}
+#hotSinger #singShow h3 span{
+	color:#009af3;
+	font-weight: 200;
+}
+#hotSinger #singShow .singInfo{
+	float:left;
+	width:12.5%;
+	margin-bottom:15px;
+}
+#hotSinger #singShow .singInfo a{
+	font-size:14px;
+	color:#555;
+	line-height: 24px;
+	
+}
+#hotSinger #singShow .singInfo a:hover{
+	color:#009af3;
+}
+#hotSinger #singShow .singInfo span{
+	font-size:14px;
+	color:#555;
+	line-height: 24px;
+}
+/*热门歌手结束*/

@@ -1,0 +1,329 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+a{
+	text-decoration: none;
+}
+#head_box{
+	width:100%;
+	height:78px;
+	border:1px solid black;
+}
+#head_box #head_show{
+	margin:0 auto;
+	height:100%;
+	width:1000px;	/*手机屏幕宽度1000px，网页宽度1000px*/
+	position:relative;
+}
+#head_box #head_show #head_logo{
+	display:block;
+	float:left;
+	margin-top:21px;
+}
+#head_box #head_show #head_search{
+	width:264px;
+	height:34px;
+	border:1px solid #cccccc;
+	position: absolute;
+	top:20px;
+	left:193px;
+	border-top-left-radius:17px;
+	border-bottom-left-radius:17px;
+	text-indent: 5px;
+}
+#head_box #head_show #head_submit{
+	width:70px;
+	height:34px;
+	border:none;
+	position: absolute;
+	left:457px;
+	top:20px;
+	border-top-right-radius:17px;
+	border-bottom-right-radius:17px;
+	background: #0C8ED9;
+	color:white;
+	font-weight: 400;
+	line-height: 34px;
+	text-align: center;
+	cursor: pointer;
+}
+#head_box #head_show a{
+	position:absolute;
+	top:30px;
+	color:#777;
+	font:13px/1.5 \5FAE\8F6F\96C5\9ED1,simsun,sans-serif;
+}
+#head_box #head_show a:hover{
+	color:#879AF4;
+}
+#head_box #head_show #head_mymusic{	
+	left:590px;
+	
+}
+#head_box #head_show #head_upload{
+	left:710px;
+}
+#head_box #head_show #head_logout{
+
+	left:800px;
+}
+
+#head_box #head_show #head_login{
+	display:block;
+	left:800px;
+	top:24px;
+	background: #169AF3;
+	width:50px;
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+	color:white;
+}
+#head_box #head_show #head_register{
+	display:block;
+	left:860px;
+	top:24px;
+	width:50px;
+	height:28px;
+	line-height: 30px;
+	text-align: center;
+	border:1px solid #ccc;
+}
+#head_list{
+	width:100%;
+	height:55px;
+	background: #2C323B;
+}
+#head_list #head_show1{
+	width:1000px;
+	height:100%;
+	margin:0 auto;
+
+}
+#head_list #head_show1 .list_left{
+	float:left;
+	padding:0px 30px;
+	height:100%;	
+}
+#head_list #head_show1 #one{
+	background: #0C8ED9;
+}
+#head_list #head_show1 .list_left a{
+	color:#ddd;
+	font: 14px/1.5 \5FAE\8F6F\96C5\9ED1,simsun,sans-serif;
+	text-align: center;
+	line-height: 55px;
+	font-weight: 500;
+}
+#head_list #head_show1 .list_left:hover{
+	background: #0C8ED9;
+}
+#head_list #head_show1 .list_right{
+	float:right;
+	padding:0px 20px;
+	height:100%;
+}
+#head_list #head_show1 .list_right a{
+	color:#ddd;
+	font: 12px/1.5 \5FAE\8F6F\96C5\9ED1,simsun,sans-serif;
+	line-height: 55px;
+}
+#head_list #head_show1 .list_right a:hover{
+	color:#14A9FF;
+}
+
+
+#cover{
+	position: fixed;
+	top:0px;
+	left:0px;
+	z-index: 2;
+	background: black;
+	diaplay:none;
+	width:0px;
+	height:0px;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+}
+#headUpload{
+	display:none;
+	width:100%;
+	height:375px;
+	position: absolute;
+	z-index: 99999;
+}
+#headUpload #uploadShow{
+	margin:0 auto;
+	height:100%;
+	width:440px;
+	margin-top:200px;
+	background: white;
+	z-index: 99999;
+	position: relative;
+}
+#headUpload #uploadShow #uploadTitle{
+	position: absolute;
+	top:30px;
+	left:50px;
+	font: 22px/22px Microsoft Yahei,"b8bf53",sans-serif;
+	color:#959595;
+}
+#headUpload #uploadShow  #closeWindow{
+	position: absolute;
+	top:0px;
+	right:0px;
+}
+#headUpload #uploadShow select{
+	position:absolute;
+	left:50px;
+	top:150px;
+}
+#headUpload #uploadShow select option{
+	
+}
+#headUpload #uploadShow input{
+	position:absolute;
+}
+#headUpload #uploadShow #singname{
+	left:50px;
+	top:100px;
+	background: #F6F6F6;
+	border:1px solid #ccc;
+	width:366px;
+	height:36px;
+	text-indent: 10px;
+}
+#headUpload #uploadShow #file1{
+	left:150px;
+	top:150px;
+}
+#headUpload #uploadShow #submitfile{
+	position: absolute;
+	left:83px;
+	top:200px;
+	width:274px;
+	height:40px;
+	text-align: center;
+	line-height: 40px;
+	background:#50A9E3;
+	cursor: pointer;
+	color:white;
+	font-size:20px;
+	font-weight: 400;
+	border:none;
+}
+#headUpload #uploadShow #warn{
+	position: absolute;
+	color:#999;
+	font-size:12px;
+	top:280px;
+	left:50px;
+	width:350px;
+	line-height: 20px;
+}
+#head_login{
+	display:none;
+	width:100%;
+	height:375px;
+	position: absolute;
+	z-index: 99999;
+}
+#head_login #login_show{
+	margin:0 auto;
+	height:100%;
+	width:440px;
+
+	margin-top:200px;
+	background: white;
+	z-index: 99999;
+	position: relative;
+}
+#head_login #login_show input{
+	position: absolute;
+}
+#head_login #login_show #login_title{
+	position: absolute;
+	top:30px;
+	left:50px;
+	font: 22px/22px Microsoft Yahei,"b8bf53",sans-serif;
+	color:#959595;
+}
+#head_login #login_show #register{
+	position: absolute;
+	top:200px;
+	left:360px;
+	color:#999;
+	font-size:12px;
+}
+#head_login #login_show #login_logo{
+	position: absolute;
+	left:0px;
+	bottom: 0px;
+}
+#head_login #login_show #closeWindow{
+	position: absolute;
+	top:0px;
+	right:0px;
+}
+#head_login #login_show #a1{
+	position: absolute;
+	top:331px;
+	left:307px;
+	color:#999;
+	font-size:12px;
+}
+#head_login #login_show #a2{
+	position: absolute;
+	top:331px;
+	left:365px;
+	color:#999;
+	font-size:12px;
+}
+#head_login #login_show #a1:hover{
+	text-decoration: underline;
+}
+#head_login #login_show #a2:hover{
+	text-decoration: underline;
+}
+#head_login #login_show #Message{
+	color:#DB0909;
+	position: absolute;
+	left:50px;
+	top:70px;
+	font-size:12px;
+	display:none;
+}
+#head_login #login_show #username{
+	left:50px;
+	top:100px;
+	background: #F6F6F6;
+	border:1px solid #ccc;
+	width:366px;
+	height:36px;
+	text-indent: 10px;
+}
+#head_login #login_show #password{
+	left:50px;
+	top:150px;
+	background: #F6F6F6;
+	border:1px solid #ccc;
+	width:366px;
+	height:36px;
+	text-indent: 10px;
+}
+#head_login #login_show #submit{
+	position: absolute;
+	left:83px;
+	top:252px;
+	width:274px;
+	height:40px;
+	text-align: center;
+	line-height: 40px;
+	background:#50A9E3;
+	cursor: pointer;
+	color:white;
+	font-size:20px;
+	font-weight: 400;
+	border:none;
+}

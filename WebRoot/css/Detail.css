@@ -1,0 +1,159 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+a{
+	text-decoration: none;
+}
+#detailBox{
+	width:100%;
+	height:100%;
+	background: url(../image/DetailBg.jpg);
+}
+#detailBox #detailShow{
+	width:1000px;
+	height:500px;
+	margin:0 auto;
+	
+	position: relative;
+}
+#detailBox #detailShow #showDanmu{
+	width:600px;
+	height:400px;
+	position:relative;
+	overflow: hidden;
+	border-right:1px solid #ccc;
+}
+#detailBox #detailShow #danmuDetail{
+	position: absolute;
+	left:0px;
+	top:410px;
+}
+#detailBox #detailShow #SendDanmu{
+	width:200px;
+	height:50px;
+	line-height: 50px;
+	text-align: center;
+	border-radius:50px;
+	background: none;
+	color:#E2DEDC;
+	border:1px solid #E2DEDC;
+	position: absolute;
+	top:410px;
+	left:200px;
+}
+#detailBox #detailShow #download{
+	display:block;
+	position: absolute;
+	top:410px;
+	left:450px;
+	width:100px;
+	height:50px;
+	border:1px solid #E2DEDC;
+	color:#E2DEDC;
+	line-height: 50px;
+	text-align: center;
+	border-radius:50px;
+}
+.danmudetail{
+	position: absolute;
+	left:100%;
+	width:500px;
+	
+}
+#detailBox #detailShow #sayBox{
+	width:400px;
+	height:400px;
+	position:absolute;
+	left:600px;
+	top:0px;
+	
+	overflow: auto;
+}
+#detailBox #detailShow #sayBox div{
+	width:100%;
+	height:70px;
+	border-bottom:1px solid  #999;
+}
+#detailBox #detailShow #sayBox div span{
+	color:#ccc;
+}
+#detailBox #detailShow #saySend{
+	position: absolute;
+	right:0px;
+	bottom:0px;
+	width:400px;
+	height:100px;
+	
+}
+#detailBox #detailShow #saySend textarea{
+	margin-top:20px;
+}
+#detailBox #detailShow #saySend button{
+	width:70px;
+	height:30px;
+}
+#controller{
+	width:100%;
+	height:80px;
+	position: fixed;
+	left:0px;
+	bottom: 0px;
+	background-color: #000;
+    opacity: .3;
+    filter: alpha(opacity=30);
+    box-shadow: 0 -10px 20px #403f3f;
+}
+#controller #contShow{
+	width:1000px;
+	height:100%;
+	margin:0 auto;
+
+}
+#controller #contShow #left_cont{
+	float:left;
+	height:52px;
+	width:52px;
+	background:url(../image/btn.png) -2px -2px;
+	
+	margin-top:15px;
+	margin-left:30px;
+}
+#controller #contShow #right_cont{
+	float:left;
+	border:1px  solid green;
+	width:700px;
+	height:35px;
+	margin-top:22px;
+	margin-left:35px;
+	font-size:12px;
+	
+}
+#controller #contShow #right_cont #total{
+	width:100%;
+	height:3px;
+	background: white;
+	position: relative;
+	margin-top:5px;
+}
+#controller #contShow #right_cont #total #curr{
+	width:0px;
+	height:100%;
+	position: absolute;
+	left:0px;
+	top:0px;
+	background: #12A5F0;
+}
+#controller #contShow #oper{
+	float:left;
+	
+	margin-top:30px;
+}
+#controller #contShow #oper #download1{
+	color:white;
+	margin-right:15px;
+	margin-left:15px;
+}
+#controller #contShow #oper #watchmv{
+	color:white;
+}

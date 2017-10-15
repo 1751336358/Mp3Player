@@ -1,0 +1,55 @@
+*{
+	padding:left;
+	margin:0px;
+}
+a{
+	text-decoration: none;
+}
+#uploadMV{
+	width:100%;
+	margin-bottom:30px;
+}
+#uploadMV #uploadShow{
+	width:500px;
+	border:1px solid #54ade7;
+	border-top:6px solid #54ade7;
+	margin:0 auto;
+	margin-top:30px;
+	height:300px;
+	position: relative;
+}
+#uploadMV #uploadShow #file{
+	position: absolute;
+	left:50px;
+	top:60px;
+}
+#uploadMV #uploadShow p{
+	position: absolute;
+	left:50px;
+	top:20px;
+}
+#uploadMV #uploadShow #uploadMV1{
+	position: absolute;
+	left:110px;
+	
+	top:100px;
+	width:274px;
+	height:40px;
+	text-align: center;
+	line-height: 40px;
+	background:#50A9E3;
+	cursor: pointer;
+	color:white;
+	font-size:20px;
+	font-weight: 400;
+	border:none;
+}
+#uploadMV #uploadShow #warn{
+	position: absolute;
+	top:180px;
+	left:50px;
+	font-size:12px;
+	color:#999;
+	width:400px;
+	line-height: 20px;
+}
